@@ -1,0 +1,80 @@
+/* style.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up primary colors for the page */
+:root {
+    --circle_size: 400px;
+    --primary-bg-color: #f0f0f0;
+    --primary-text-color: #333;
+    --slider-thumb-color: #555;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Heading styles */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Sliders container */
+.sliders-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Slider styles */
+.sliders {
+    width: 300px;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(to left, var(--primary-bg-color) 0%, var(--slider-thumb-color) 100%);
+    border-radius: 5px;
+}
+
+.sliders::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--slider-thumb-color);
+    cursor: pointer;
+}
+
+/* Circle color display */
+#circleColor {
+    border-radius: 50%;
+    width: var(--circle_size);
+    height: var(--circle_size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Hexadecimal color display */
+#hexa {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
